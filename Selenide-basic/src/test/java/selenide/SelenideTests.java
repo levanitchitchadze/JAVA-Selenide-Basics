@@ -1,32 +1,14 @@
 package selenide;
 import com.codeborne.selenide.*;
-import com.codeborne.selenide.collections.ExactTexts;
-import com.codeborne.selenide.conditions.CssValue;
-import com.codeborne.selenide.conditions.Value;
 import com.codeborne.selenide.ex.SoftAssertionError;
-import com.codeborne.selenide.junit5.ScreenShooterExtension;
-import com.codeborne.selenide.testng.ScreenShooter;
 import com.codeborne.selenide.testng.SoftAsserts;
-import org.jsoup.select.Elements;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
-import java.io.FileNotFoundException;
-import java.time.Duration;
-import java.util.List;
-
-import static com.codeborne.selenide.CollectionCondition.*;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Configuration.*;
-
-import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
 @Listeners({ SoftAsserts.class})
